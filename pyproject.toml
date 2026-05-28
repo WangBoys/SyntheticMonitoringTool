@@ -1,0 +1,23 @@
+[tool.basedpyright]
+pythonVersion = "3.10"
+typeCheckingMode = "standard"
+
+# 忽略以下规则
+reportUnusedCallResult = "none"
+reportUnannotatedClassAttribute = "none"
+reportUnknownMemberType = "none"
+reportUnknownArgumentType = "none"
+reportUnknownVariableType = "none"
+reportAny = "none"
+reportUnusedParameter = "none"
+reportUnnecessaryComparison = "none"
+reportUnreachable = "none"
+reportAttributeAccessIssue = "error"
+reportGeneralTypeIssues = "error"
+
+# 排除目录
+exclude = [
+    "dist/**",
+    "build/**",
+    "pw-browsers/**",
+]

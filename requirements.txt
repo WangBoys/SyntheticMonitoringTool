@@ -1,0 +1,10 @@
+PySide6
+pandas
+openpyxl
+playwright
+msoffcrypto-tool
+pywin32; platform_system == "Windows"
+pyinstaller
+Pillow
+httpx>=0.27.0
+beautifulsoup4>=4.12.0

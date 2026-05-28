@@ -1,0 +1,23 @@
+{
+  "input": {
+    "file_path": "/data/urls.xlsx",
+    "password": "",
+    "use_office_fallback": false
+  },
+  "probe": {
+    "sheet_name": "Sheet1",
+    "has_header": true,
+    "url_column": "B",
+    "concurrency": 5,
+    "timeout_seconds": 30,
+    "retry_count": 1,
+    "success_mode": "any_http",
+    "custom_status_codes": "2xx,3xx",
+    "probe_mode": "lightweight",
+    "extract_title": true,
+    "track_redirects": true
+  },
+  "output": {
+    "path": "/data/urls_monitoring_result.xlsx"
+  }
+}

@@ -1,0 +1,12 @@
+# Shell scripts must use LF so shebang works on Linux.
+*.sh text eol=lf
+
+# Python sources: LF (portable).
+*.py text eol=lf
+
+# JSON / markdown
+*.json text eol=lf
+*.md text eol=lf
+
+# Windows batch stays CRLF
+*.bat text eol=crlf
