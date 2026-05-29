@@ -267,10 +267,10 @@ class MainWindow(QtWidgets.QMainWindow):
         _: QtCore.QMetaObject.Connection = self.btn_output.clicked.connect(self._on_browse_output)
         self.btn_open_output: final = QtWidgets.QPushButton("打开输出文件")  # type: ignore[valid-type]
         _: QtCore.QMetaObject.Connection = self.btn_open_output.clicked.connect(self._on_open_output)
-        config_layout.addWidget(QtWidgets.QLabel("输出文件"), 4, 0)
-        config_layout.addWidget(self.output_edit, 4, 1, 1, 4)
-        config_layout.addWidget(self.btn_output, 4, 5)
-        config_layout.addWidget(self.btn_open_output, 4, 6)
+        config_layout.addWidget(QtWidgets.QLabel("输出文件"), 5, 0)
+        config_layout.addWidget(self.output_edit, 5, 1, 1, 4)
+        config_layout.addWidget(self.btn_output, 5, 5)
+        config_layout.addWidget(self.btn_open_output, 5, 6)
         self._update_open_output_button_state()
 
         root.addWidget(config_box)
